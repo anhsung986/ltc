@@ -1,0 +1,307 @@
+/* ==========================================
+   FADE IN
+========================================== */
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.glass-card{
+    animation:fadeUp 1s ease;
+}
+
+.gallery{
+    animation:fadeUp 1.2s ease;
+}
+
+.letter{
+    animation:fadeUp 1.4s ease;
+}
+
+/* ==========================================
+   FLOAT
+========================================== */
+
+@keyframes floating{
+
+    0%{
+        transform:translateY(0px);
+    }
+
+    50%{
+        transform:translateY(-10px);
+    }
+
+    100%{
+        transform:translateY(0px);
+    }
+
+}
+
+.glass-card{
+    animation:
+    fadeUp 1s ease,
+    floating 5s ease-in-out infinite;
+}
+
+/* ==========================================
+   RGB TITLE
+========================================== */
+
+@keyframes rgb{
+
+    0%{
+        color:#ff4d88;
+    }
+
+    20%{
+        color:#ff7b54;
+    }
+
+    40%{
+        color:#ffd93d;
+    }
+
+    60%{
+        color:#4ef37b;
+    }
+
+    80%{
+        color:#42a5ff;
+    }
+
+    100%{
+        color:#d66bff;
+    }
+
+}
+
+.title{
+
+    animation:rgb 8s linear infinite;
+
+}
+
+/* ==========================================
+   GLOW
+========================================== */
+
+@keyframes glow{
+
+    0%{
+        text-shadow:
+        0 0 10px #fff;
+    }
+
+    50%{
+        text-shadow:
+        0 0 25px #fff,
+        0 0 50px #ff7eb3;
+    }
+
+    100%{
+        text-shadow:
+        0 0 10px #fff;
+    }
+
+}
+
+.hello{
+
+    animation:
+    glow 3s infinite,
+    rgb 10s linear infinite;
+
+}
+
+/* ==========================================
+   BUTTON
+========================================== */
+
+@keyframes pulse{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(1.05);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}
+
+#loveBtn{
+
+    animation:pulse 2s infinite;
+
+}
+
+#loveBtn:hover{
+
+    animation:none;
+
+}
+
+/* ==========================================
+   HEART
+========================================== */
+
+.heart{
+
+    position:fixed;
+
+    bottom:-50px;
+
+    color:#ff4d88;
+
+    user-select:none;
+
+    pointer-events:none;
+
+    animation-name:heartFloat;
+
+    animation-timing-function:linear;
+
+}
+
+@keyframes heartFloat{
+
+    from{
+
+        transform:
+        translateY(0)
+        rotate(0deg);
+
+        opacity:1;
+
+    }
+
+    to{
+
+        transform:
+        translateY(-120vh)
+        rotate(360deg);
+
+        opacity:0;
+
+    }
+
+}
+
+/* ==========================================
+   IMAGE
+========================================== */
+
+.slider img{
+
+    transition:
+    transform .45s,
+    box-shadow .45s;
+
+}
+
+.slider img:hover{
+
+    transform:
+    scale(1.08)
+    rotate(1deg);
+
+    box-shadow:
+    0 0 20px #ffffff88,
+    0 0 40px #ff7eb388;
+
+}
+
+/* ==========================================
+   LETTER
+========================================== */
+
+.letter-card{
+
+    transition:.5s;
+
+}
+
+.letter-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:
+    0 0 35px rgba(255,255,255,.25);
+
+}
+
+/* ==========================================
+   MUSIC
+========================================== */
+
+#music-btn{
+
+    animation:musicGlow 3s infinite;
+
+}
+
+@keyframes musicGlow{
+
+    0%{
+
+        box-shadow:
+        0 0 10px rgba(255,255,255,.3);
+
+    }
+
+    50%{
+
+        box-shadow:
+        0 0 25px #ff7eb3,
+        0 0 50px #ff7eb3;
+
+    }
+
+    100%{
+
+        box-shadow:
+        0 0 10px rgba(255,255,255,.3);
+
+    }
+
+}
+
+/* ==========================================
+   SCROLL
+========================================== */
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+/* ==========================================
+   SELECTION
+========================================== */
+
+::selection{
+
+    background:#ff5da8;
+
+    color:white;
+
+}
