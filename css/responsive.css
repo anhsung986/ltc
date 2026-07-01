@@ -1,0 +1,219 @@
+/* ==========================================
+   RESPONSIVE - TABLET
+========================================== */
+
+@media screen and (max-width: 992px){
+
+    .container{
+        padding:30px 15px;
+    }
+
+    .glass-card{
+        max-width:650px;
+        padding:35px;
+    }
+
+    .title{
+        font-size:34px;
+    }
+
+    .hello{
+        font-size:42px;
+    }
+
+    .desc{
+        font-size:17px;
+    }
+
+    .gallery h2,
+    .letter-card h2{
+        font-size:32px;
+    }
+
+}
+
+/* ==========================================
+   RESPONSIVE - MOBILE
+========================================== */
+
+@media screen and (max-width:768px){
+
+    .top-bar{
+        top:15px;
+        right:15px;
+    }
+
+    #music-btn{
+        width:48px;
+        height:48px;
+        font-size:20px;
+    }
+
+    .glass-card{
+        width:100%;
+        padding:28px 22px;
+        border-radius:24px;
+    }
+
+    .hello{
+        font-size:36px;
+    }
+
+    .title{
+        font-size:28px;
+        line-height:1.4;
+    }
+
+    .desc{
+        font-size:16px;
+        line-height:1.8;
+    }
+
+    .counter span{
+        font-size:16px;
+    }
+
+    .counter h2{
+        font-size:28px;
+    }
+
+    #loveBtn{
+        width:100%;
+        padding:16px;
+        font-size:18px;
+    }
+
+    .gallery{
+        margin:50px auto;
+    }
+
+    .gallery h2{
+        font-size:28px;
+    }
+
+    .slider{
+        grid-template-columns:1fr;
+        gap:20px;
+    }
+
+    .slider img{
+        height:230px;
+    }
+
+    .letter{
+        padding:40px 15px;
+    }
+
+    .letter-card{
+        padding:28px 22px;
+    }
+
+    .letter-card h2{
+        font-size:28px;
+    }
+
+    .letter-card p{
+        font-size:16px;
+        line-height:1.8;
+    }
+
+    footer{
+        font-size:14px;
+    }
+
+}
+
+/* ==========================================
+   SMALL PHONE
+========================================== */
+
+@media screen and (max-width:480px){
+
+    .glass-card{
+        padding:22px 18px;
+    }
+
+    .hello{
+        font-size:30px;
+    }
+
+    .title{
+        font-size:24px;
+    }
+
+    .desc{
+        font-size:15px;
+    }
+
+    .counter h2{
+        font-size:24px;
+    }
+
+    #loveBtn{
+        font-size:16px;
+        padding:14px;
+    }
+
+    .gallery h2,
+    .letter-card h2{
+        font-size:24px;
+    }
+
+    .slider img{
+        height:200px;
+        border-radius:18px;
+    }
+
+    .letter-card p{
+        font-size:15px;
+    }
+
+}
+
+/* ==========================================
+   LARGE DESKTOP
+========================================== */
+
+@media screen and (min-width:1400px){
+
+    .glass-card{
+        max-width:820px;
+    }
+
+    .title{
+        font-size:48px;
+    }
+
+    .hello{
+        font-size:60px;
+    }
+
+    .desc{
+        font-size:20px;
+    }
+
+    .gallery{
+        max-width:1400px;
+    }
+
+    .slider img{
+        height:360px;
+    }
+
+}
+
+/* ==========================================
+   LANDSCAPE PHONE
+========================================== */
+
+@media screen and (max-height:500px) and (orientation:landscape){
+
+    .container{
+        padding:20px;
+    }
+
+    .glass-card{
+        margin:30px 0;
+    }
+
+}
