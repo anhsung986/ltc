@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <h2>💞 Hành Trình Của Chúng Ta</h2>
 
         <div class="timeline-item">
-            <span>🌸 01/01/2025</span>
+            <span>🌸 14/01/2026</span>
             <p>Ngày đầu tiên chúng ta gặp nhau.</p>
         </div>
 
