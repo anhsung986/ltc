@@ -4,7 +4,7 @@
 // =========================================
 
 // ❤️ ĐỔI NGÀY NÀY THEO NGÀY CỦA HAI BẠN
-const loveDate = new Date("2025-01-01T00:00:00");
+const loveDate = new Date("2026-01-014T00:00:00");
 
 const counter = document.getElementById("love-days");
 
