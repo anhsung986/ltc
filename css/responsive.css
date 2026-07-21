@@ -314,3 +314,39 @@
     from { opacity: 0.3; transform: scale(0.98); }
     to { opacity: 1; transform: scale(1); }
 }
+
+/* ====================================
+   SLIDER VUỐT NGANG HIỂN THỊ FULL ẢNH
+==================================== */
+.gallery .custom-slider {
+    width: 100% !important;
+    max-width: 450px !important;
+    margin: 0 auto !important;
+    overflow-x: auto !important; /* Cho phép vuốt ngang */
+    scroll-snap-type: x mandatory !important; /* Tự hít từng ảnh */
+    -webkit-overflow-scrolling: touch !important;
+    border-radius: 22px !important;
+    padding-bottom: 10px !important;
+}
+
+/* Tắt thanh cuộn cho gọn */
+.gallery .custom-slider::-webkit-scrollbar {
+    display: none !important;
+}
+
+.gallery .slider-track {
+    display: flex !important;
+    gap: 0 !important;
+    width: 100% !important;
+}
+
+.gallery .slider-track img {
+    flex: 0 0 100% !important; /* Mỗi lần chỉ hiện đúng 1 ảnh */
+    width: 100% !important;
+    height: auto !important;
+    max-height: 520px !important;
+    object-fit: contain !important; /* Giữ full 100% mặt không xén */
+    border-radius: 22px !important;
+    scroll-snap-align: center !important; /* Căn giữa ảnh khi vuốt */
+}
+   
