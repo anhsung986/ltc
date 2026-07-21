@@ -238,66 +238,79 @@
    CUSTOM SLIDER CHUYỂN ẢNH
 ========================= */
 .custom-slider-container {
-    position: relative;
-    width: 100%;
-    max-width: 420px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/* =========================
+   CUSTOM SLIDER CHUYỂN ẢNH (FIX LỖI FULL)
+========================= */
+.gallery .slider {
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    overflow: visible !important;
+}
+
+.custom-slider-container {
+    position: relative !important;
+    width: 100% !important;
+    max-width: 420px !important;
+    margin: 0 auto !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
 }
 
 .slider-wrapper {
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 350px;
+    position: relative !important;
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    min-height: auto !important;
 }
 
+/* Sửa tận gốc thẻ ảnh */
+.slider-wrapper img,
 .slide-img {
     display: none;
     width: 100% !important;
     height: auto !important;
-    max-height: 520px !important;
+    max-height: 500px !important;
     object-fit: contain !important;
-    border-radius: 22px;
-    box-shadow: 0 12px 35px rgba(0,0,0,.25);
-    animation: fadeIn 0.6s ease-in-out;
+    border-radius: 22px !important;
+    box-shadow: 0 12px 35px rgba(0,0,0,.25) !important;
+    animation: fadeIn 0.6s ease-in-out !important;
 }
 
+.slider-wrapper img.active,
 .slide-img.active {
-    display: block;
+    display: block !important;
 }
 
 /* Nút bấm chuyển ảnh 2 bên */
 .prev-btn, .next-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(255, 255, 255, 0.4);
-    color: #fff;
-    border: none;
-    font-size: 20px;
-    padding: 10px 14px;
-    border-radius: 50%;
-    cursor: pointer;
-    backdrop-filter: blur(5px);
-    z-index: 10;
-    transition: 0.3s;
+    position: absolute !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    background: rgba(255, 255, 255, 0.4) !important;
+    color: #fff !important;
+    border: none !important;
+    font-size: 20px !important;
+    padding: 10px 14px !important;
+    border-radius: 50% !important;
+    cursor: pointer !important;
+    backdrop-filter: blur(5px) !important;
+    z-index: 10 !important;
+    transition: 0.3s !important;
 }
 
-.prev-btn { left: -15px; }
-.next-btn { right: -15px; }
+.prev-btn { left: -10px !important; }
+.next-btn { right: -10px !important; }
 
 .prev-btn:hover, .next-btn:hover {
-    background: rgba(255, 255, 255, 0.8);
-    color: #ff4d88;
+    background: rgba(255, 255, 255, 0.8) !important;
+    color: #ff4d88 !important;
 }
 
 @keyframes fadeIn {
     from { opacity: 0.3; transform: scale(0.98); }
     to { opacity: 1; transform: scale(1); }
 }
-   
