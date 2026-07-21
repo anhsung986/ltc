@@ -1,352 +1,202 @@
 /* ==========================================
    RESPONSIVE - TABLET
 ========================================== */
-
 @media screen and (max-width: 992px){
-
     .container{
-        padding:30px 15px;
+        padding: 30px 15px;
     }
-
     .glass-card{
-        max-width:650px;
-        padding:35px;
+        max-width: 650px;
+        padding: 35px;
     }
-
     .title{
-        font-size:34px;
+        font-size: 34px;
     }
-
     .hello{
-        font-size:42px;
+        font-size: 42px;
     }
-
     .desc{
-        font-size:17px;
+        font-size: 17px;
     }
-
     .gallery h2,
     .letter-card h2{
-        font-size:32px;
+        font-size: 32px;
     }
-
 }
 
 /* ==========================================
    RESPONSIVE - MOBILE
 ========================================== */
-
-@media screen and (max-width:768px){
-
+@media screen and (max-width: 768px){
     .top-bar{
-        top:15px;
-        right:15px;
+        top: 15px;
+        right: 15px;
     }
-
     #music-btn{
-        width:48px;
-        height:48px;
-        font-size:20px;
+        width: 48px;
+        height: 48px;
+        font-size: 20px;
     }
-
     .glass-card{
-        width:100%;
-        padding:28px 22px;
-        border-radius:24px;
+        width: 100%;
+        padding: 28px 22px;
+        border-radius: 24px;
     }
-
     .hello{
-        font-size:36px;
+        font-size: 36px;
     }
-
     .title{
-        font-size:28px;
-        line-height:1.4;
+        font-size: 28px;
+        line-height: 1.4;
     }
-
     .desc{
-        font-size:16px;
-        line-height:1.8;
+        font-size: 16px;
+        line-height: 1.8;
     }
-
     .counter span{
-        font-size:16px;
+        font-size: 16px;
     }
-
     .counter h2{
-        font-size:28px;
+        font-size: 28px;
     }
-
     #loveBtn{
-        width:100%;
-        padding:16px;
-        font-size:18px;
+        width: 100%;
+        padding: 16px;
+        font-size: 18px;
     }
-
     .gallery{
-        margin:50px auto;
+        margin: 50px auto;
     }
-
     .gallery h2{
-        font-size:28px;
+        font-size: 28px;
     }
-
-    .slider{
-        grid-template-columns:1fr;
-        gap:20px;
-    }
-
-    .slider img{
-        height:230px;
-    }
-
     .letter{
-        padding:40px 15px;
+        padding: 40px 15px;
     }
-
     .letter-card{
-        padding:28px 22px;
+        padding: 28px 22px;
     }
-
     .letter-card h2{
-        font-size:28px;
+        font-size: 28px;
     }
-
     .letter-card p{
-        font-size:16px;
-        line-height:1.8;
+        font-size: 16px;
+        line-height: 1.8;
     }
-
     footer{
-        font-size:14px;
+        font-size: 14px;
     }
-
 }
 
 /* ==========================================
    SMALL PHONE
 ========================================== */
-
-@media screen and (max-width:480px){
-
+@media screen and (max-width: 480px){
     .glass-card{
-        padding:22px 18px;
+        padding: 22px 18px;
     }
-
     .hello{
-        font-size:30px;
+        font-size: 30px;
     }
-
     .title{
-        font-size:24px;
+        font-size: 24px;
     }
-
     .desc{
-        font-size:15px;
+        font-size: 15px;
     }
-
     .counter h2{
-        font-size:24px;
+        font-size: 24px;
     }
-
     #loveBtn{
-        font-size:16px;
-        padding:14px;
+        font-size: 16px;
+        padding: 14px;
     }
-
     .gallery h2,
     .letter-card h2{
-        font-size:24px;
+        font-size: 24px;
     }
-
-    .slider img{
-        height:200px;
-        border-radius:18px;
-    }
-
     .letter-card p{
-        font-size:15px;
+        font-size: 15px;
     }
-
 }
 
 /* ==========================================
    LARGE DESKTOP
 ========================================== */
-
-@media screen and (min-width:1400px){
-
+@media screen and (min-width: 1400px){
     .glass-card{
-        max-width:820px;
+        max-width: 820px;
     }
-
     .title{
-        font-size:48px;
+        font-size: 48px;
     }
-
     .hello{
-        font-size:60px;
+        font-size: 60px;
     }
-
     .desc{
-        font-size:20px;
+        font-size: 20px;
     }
-
     .gallery{
-        max-width:1400px;
+        max-width: 1400px;
     }
-
-    .slider img{
-        height:360px;
-    }
-
 }
 
 /* ==========================================
    LANDSCAPE PHONE
 ========================================== */
-
-@media screen and (max-height:500px) and (orientation:landscape){
-
+@media screen and (max-height: 500px) and (orientation: landscape){
     .container{
-        padding:20px;
+        padding: 20px;
     }
-
     .glass-card{
-        margin:30px 0;
+        margin: 30px 0;
     }
-
-   /* Ghi đè toàn bộ để ảnh hiển thị full khuôn mặt */
-.gallery .slider {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    gap: 20px !important;
 }
 
-.gallery .slider img {
+/* ==========================================
+   FIX DỨT ĐIỂM TRÀN TRANG VÀ SLIDER VUỐT
+========================================== */
+html, body {
     width: 100% !important;
-    max-width: 450px !important;
-    height: auto !important;
-    max-height: none !important;
-    object-fit: contain !important;
-    border-radius: 22px !important;
-    aspect-ratio: auto !important;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
 }
 
-/* =========================
-   CUSTOM SLIDER CHUYỂN ẢNH
-========================= */
-.custom-slider-container {
-/* =========================
-   CUSTOM SLIDER CHUYỂN ẢNH (FIX LỖI FULL)
-========================= */
-.gallery .slider {
-    display: block !important;
+.gallery {
     width: 100% !important;
-    height: auto !important;
-    overflow: visible !important;
+    max-width: 100% !important;
+    padding: 0 15px !important;
+    margin: 40px auto !important;
+    box-sizing: border-box !important;
 }
 
-.custom-slider-container {
-    position: relative !important;
+.gallery .custom-slider {
     width: 100% !important;
     max-width: 420px !important;
     margin: 0 auto !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-}
-
-.slider-wrapper {
-    position: relative !important;
-    width: 100% !important;
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    min-height: auto !important;
-}
-
-/* Sửa tận gốc thẻ ảnh */
-.slider-wrapper img,
-.slide-img {
-    display: none;
-    width: 100% !important;
-    height: auto !important;
-    max-height: 500px !important;
-    object-fit: contain !important;
-    border-radius: 22px !important;
-    box-shadow: 0 12px 35px rgba(0,0,0,.25) !important;
-    animation: fadeIn 0.6s ease-in-out !important;
-}
-
-.slider-wrapper img.active,
-.slide-img.active {
-    display: block !important;
-}
-
-/* Nút bấm chuyển ảnh 2 bên */
-.prev-btn, .next-btn {
-    position: absolute !important;
-    top: 50% !important;
-    transform: translateY(-50%) !important;
-    background: rgba(255, 255, 255, 0.4) !important;
-    color: #fff !important;
-    border: none !important;
-    font-size: 20px !important;
-    padding: 10px 14px !important;
-    border-radius: 50% !important;
-    cursor: pointer !important;
-    backdrop-filter: blur(5px) !important;
-    z-index: 10 !important;
-    transition: 0.3s !important;
-}
-
-.prev-btn { left: -10px !important; }
-.next-btn { right: -10px !important; }
-
-.prev-btn:hover, .next-btn:hover {
-    background: rgba(255, 255, 255, 0.8) !important;
-    color: #ff4d88 !important;
-}
-
-@keyframes fadeIn {
-    from { opacity: 0.3; transform: scale(0.98); }
-    to { opacity: 1; transform: scale(1); }
-}
-
-/* ====================================
-   SLIDER VUỐT NGANG HIỂN THỊ FULL ẢNH
-==================================== */
-.gallery .custom-slider {
-    width: 100% !important;
-    max-width: 450px !important;
-    margin: 0 auto !important;
-    overflow-x: auto !important; /* Cho phép vuốt ngang */
-    scroll-snap-type: x mandatory !important; /* Tự hít từng ảnh */
+    overflow-x: auto !important;
+    scroll-snap-type: x mandatory !important;
     -webkit-overflow-scrolling: touch !important;
     border-radius: 22px !important;
-    padding-bottom: 10px !important;
 }
 
-/* Tắt thanh cuộn cho gọn */
 .gallery .custom-slider::-webkit-scrollbar {
     display: none !important;
 }
 
 .gallery .slider-track {
     display: flex !important;
-    gap: 0 !important;
     width: 100% !important;
+    gap: 0 !important;
 }
 
 .gallery .slider-track img {
-    flex: 0 0 100% !important; /* Mỗi lần chỉ hiện đúng 1 ảnh */
+    flex: 0 0 100% !important;
     width: 100% !important;
     height: auto !important;
     max-height: 520px !important;
-    object-fit: contain !important; /* Giữ full 100% mặt không xén */
+    object-fit: contain !important;
     border-radius: 22px !important;
-    scroll-snap-align: center !important; /* Căn giữa ảnh khi vuốt */
+    scroll-snap-align: center !important;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2) !important;
 }
-   
