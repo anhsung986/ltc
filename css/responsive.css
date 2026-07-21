@@ -216,4 +216,20 @@
         margin:30px 0;
     }
 
+   /* Ghi đè toàn bộ để ảnh hiển thị full khuôn mặt */
+.gallery .slider {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 20px !important;
+}
+
+.gallery .slider img {
+    width: 100% !important;
+    max-width: 450px !important;
+    height: auto !important;
+    max-height: none !important;
+    object-fit: contain !important;
+    border-radius: 22px !important;
+    aspect-ratio: auto !important;
 }
