@@ -12,9 +12,7 @@ const counter = document.getElementById("love-days");
 function updateLoveTimer() {
 
     const now = new Date();
-
-    let diff = now - loveDate;
-
+    
     let diff = now - loveDate;
 
     console.log("loveDate:", loveDate);
