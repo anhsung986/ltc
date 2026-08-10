@@ -38,10 +38,11 @@ function updateLoveTimer() {
     diff %= (1000 * 60);
 
     const seconds = Math.floor(diff / 1000);
+    
 
     counter.innerHTML = `
-        ${days} ngày<br>
-        ${hours} giờ ${minutes} phút ${seconds} giây
+       ${days} ngày<br>
+      ${hours} giờ ${minutes} phút ${seconds} giây
     `;
 }
 
