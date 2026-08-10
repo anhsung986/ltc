@@ -15,6 +15,11 @@ function updateLoveTimer() {
 
     let diff = now - loveDate;
 
+    let diff = now - loveDate;
+
+    console.log("loveDate:", loveDate);
+    console.log("diff:", diff);
+
     if (diff < 0) {
         counter.innerHTML = "Chưa đến ngày ❤️";
         return;
