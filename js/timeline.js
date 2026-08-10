@@ -12,18 +12,8 @@ document.addEventListener("DOMContentLoaded", () => {
         <h2>💞 Hành Trình Của Chúng Ta</h2>
 
         <div class="timeline-item">
-            <span>🌸 14/01/2026</span>
+            <span>🌸 09/08/2026</span>
             <p>Ngày đầu tiên chúng ta gặp nhau.</p>
-        </div>
-
-        <div class="timeline-item">
-            <span>💕 14/02/2025</span>
-            <p>Ngày đầu tiên cùng đi chơi.</p>
-        </div>
-
-        <div class="timeline-item">
-            <span>💍 20/03/2025</span>
-            <p>Ngày chính thức yêu nhau.</p>
         </div>
 
         <div class="timeline-item">
